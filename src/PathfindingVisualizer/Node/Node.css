@@ -1,0 +1,140 @@
+:root
+{
+  --clr-node: #500250;
+}
+.node {
+  width: 25px;
+  height: 25px;
+  outline: 1px solid rgb(175, 216, 248);
+  display: inline-block;
+}
+
+.node-finish {
+  background-color: var(--clr-node);
+  clip-path: polygon(51% 0, 94% 53%, 59% 100%, 0% 100%, 38% 51%, 0% 0%);
+}
+.node-finished
+{
+  background-color: var(--clr-node);
+  clip-path: circle(45.4% at 50% 50%);
+}
+.node-start {
+  background-color: var(--clr-node);
+  clip-path: polygon(51% 0, 94% 53%, 59% 100%, 0% 100%, 38% 51%, 0% 0%);
+
+}
+.red
+{
+  background-color: red;
+}
+.node-visited {
+  animation-name: visitedAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.3);
+    background-color: rgba(0, 0, 66, 0.75);
+    border-radius: 100%;
+  }
+
+  50% {
+    background-color: rgba(17, 104, 217, 0.75);
+  }
+
+  75% {
+    transform: scale(1.2);
+    background-color: rgba(0, 217, 159, 0.75);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgba(0, 190, 218, 0.75);
+  }
+}
+
+.node-wall {
+  background-color: rgb(12, 53, 71);
+  z-index: 1;
+}
+
+.node-end-animation
+{
+  animation-name: end-animation;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  /* animation-direction: alternate; */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  background-color: #730073;
+  clip-path: polygon(51% 0, 94% 53%, 59% 100%, 0% 100%, 38% 51%, 0% 0%);
+}
+
+@keyframes end-animation {
+  0%
+  {
+    transform: scale(0.5)
+  }
+  100%
+  {
+    transform: scale(0.6);
+  }
+}
+.node-shortest-path {
+  animation-name: shortestPath;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes shortestPath {
+  0% {
+    transform: scale(0.6);
+    background-color: rgb(255, 254, 106);
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(255, 254, 106);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgb(255, 254, 106);
+  }
+}
+
+
+h3 {
+  opacity: 0;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  transition: 0.3s ease-in-out;
+}
+.color
+{
+  opacity: 1;
+  color: red;
+  transition: 3s ease-in-out;
+
+}
+button{
+  margin-top: 3em;
+  transition: 1s ease-in-out;
+}
+
+
+
