@@ -79,15 +79,15 @@ export default class PathfindingVisualizer extends Component {
   animation_end_popup(){
     console.log("Hello");
   }
-  animateShortestPath(nodesInShortestPathOrder) {
-    document.querySelector("h3").style.opacity = '1';
-    for (let i = 0; i < nodesInShortestPathOrder.length; i++) {
-      setTimeout(() => {
-        const node = nodesInShortestPathOrder[i];
-        document.getElementById(`node-${node.row}-${node.col}`).className =
-          'node node-end-animation';
-      }, 60 * i);
-    }
+  // animateShortestPath(nodesInShortestPathOrder) {
+  //   document.querySelector("h3").style.opacity = '1';
+  //   for (let i = 0; i < nodesInShortestPathOrder.length; i++) {
+  //     setTimeout(() => {
+  //       const node = nodesInShortestPathOrder[i];
+  //       document.getElementById(`node-${node.row}-${node.col}`).className =
+  //         'node node-end-animation';
+  //     }, 60 * i);
+  //   }
     setTimeout(function() {
       for (let i = 0; i < nodesInShortestPathOrder.length; i++) {
         setTimeout(() => {
