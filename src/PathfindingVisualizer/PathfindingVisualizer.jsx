@@ -66,9 +66,9 @@ export default class PathfindingVisualizer extends Component {
           const first_node = nodesInShortestPathOrder[0];
           document.getElementById(`node-${first_node.row}-${first_node.col}`).classList.remove('node-visited');
           document.getElementById(`node-${first_node.row}-${first_node.col}`).classList.add('node-start');
-          // const last_node = nodesInShortestPathOrder[nodesInShortestPathOrder.length-1];
-          // document.getElementById(`node-${last_node.row}-${last_node.col}`).classList.remove('node-visited');
-          // document.getElementById(`node-${last_node.row}-${last_node.col}`).classList.add('node-finish');
+          const last_node = nodesInShortestPathOrder[nodesInShortestPathOrder.length-1];
+          document.getElementById(`node-${last_node.row}-${last_node.col}`).classList.remove('node-visited');
+          document.getElementById(`node-${last_node.row}-${last_node.col}`).classList.add('node-finish');
         }, 50*i)
           
         
