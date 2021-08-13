@@ -4,4 +4,4 @@ Dijkstra's algorithm gurantees the shortest path between two or more nodes. This
 Many famous applications and games, including Google Maps, use this algorithm due to its effeciency. It has a time complexity of O(V2) but with min priority queue it's time complexity drops to O(V + ElogV)
 
 # How to use the Application
-You can easily visulaize how the algorithm works by pressing the Visualize button. You can draw walls by clicking and dragging across the grid to make it a bit harder for the algorithm and can clearly see how easily Dijkstra's pierces through even the most complex mases with ease while guranteeing the shortest path!
+You can easily visualize how the algorithm works by pressing the Visualize button. You can draw walls by clicking and dragging across the grid to make it a bit harder for the algorithm and can clearly see how easily Dijkstra's pierces through even the most complex mases with ease while guranteeing the shortest path!
